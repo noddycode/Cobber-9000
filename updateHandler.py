@@ -62,7 +62,7 @@ class UpdateHandler:
 			url = post['post_url']
 			await self.discordClient.send_message(
 				self.discordClient.get_channel(self.updateChannel),
-				f"**Update:**{url}")
+				f"**Update:** {url}")
 			self.lastPost = post['id']
 
 configFile = sys.argv[1]
